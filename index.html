@@ -7,6 +7,7 @@
     <title>Bloemenveld Frankendael - Home</title>
     <link rel="stylesheet"
         href="https://s2108887.github.io/look-and-feel-styleguide/styleguide-bloemenveld-frankendael.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -16,12 +17,59 @@
 
         <p>Welkom op de webpagina van Bloemenveld Frankendael.
         </p>
-        <form>
-            <p>Hier kunt u instellingen opgeven over, onder andere, toegankelijkheid.
-            </p>
+
+        <form class="instellingen-formulier">
 
             <button type="button" class="knop">Instellingen</button>
+            <button type="button" class="knop">Instellingen verbergen</button>
 
+            <fieldset>
+                <legend>Licht/donker-kleurenschema</legend>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="kleurenschema" value="automatisch" checked>
+                            <span>Automatisch</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="kleurenschema" value="licht">
+                            <span>Licht</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="kleurenschema" value="licht">
+                            <span>Donker</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contrast</legend>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="contrast" value="automatisch" checked>
+                            <span>Automatisch</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="contrast" value="standaard">
+                            <span>Standaard</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="contrast" value="hoog">
+                            <span>Hoog</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
         </form>
 
         <p>Bij <a href="verkennen.html">Verkennen</a> vindt u informatie over de verschillende

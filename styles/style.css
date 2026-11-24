@@ -1,0 +1,39 @@
+.instellingen-formulier {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--afstand-normaal);
+
+    button {
+        flex-basis: 100%;
+    }
+
+
+
+    fieldset {
+        --_achtergrond-kleur: light-dark(var(--accent-kleur-1-lichtst), var(--accent-kleur-1-donker));
+        background-color: var(--_achtergrond-kleur);
+        border: none;
+        border-bottom: 5px solid light-dark(var(--accent-kleur-1-donker), var(--accent-kleur-1-lichtst));
+
+        ul {
+            list-style-type: "";
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: var(--afstand-normaal);
+            label {
+                cursor: pointer;
+                display: flex;
+                align-items: end;
+            }
+
+            padding-left: 0;
+        }
+    }
+
+    legend {
+        padding: var(--afstand-klein);
+        background-color: var(--_achtergrond-kleur);
+    }
+}
