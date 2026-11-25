@@ -1,5 +1,17 @@
+.verborgen {
+    display: none;
+}
+
 html {
     --z-index-navigatie: 10;
+
+    &:has(body[data-kleurenschema="licht"]) {
+        color-scheme: light;
+    }
+
+    &:has(body[data-kleurenschema="donker"]) {
+        color-scheme: dark;
+    }
 }
 
 body {
@@ -41,7 +53,7 @@ main {
     @container (width > 35rem) {
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     }
-    
+
     gap: var(--afstand-normaal);
 
     button {

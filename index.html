@@ -21,9 +21,9 @@
         <form class="instellingen-formulier">
 
             <button type="button" class="knop">Instellingen</button>
-            <button type="button" class="knop">Instellingen verbergen</button>
+            <button type="button" class="knop verborgen">Instellingen verbergen</button>
 
-            <fieldset>
+            <fieldset class="verborgen">
                 <legend>Licht/donker-kleurenschema</legend>
                 <ul>
                     <li>
@@ -40,14 +40,14 @@
                     </li>
                     <li>
                         <label>
-                            <input type="radio" name="kleurenschema" value="licht">
+                            <input type="radio" name="kleurenschema" value="donker">
                             <span>Donker</span>
                         </label>
                     </li>
                 </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="verborgen">
                 <legend>Contrast</legend>
                 <ul>
                     <li>
@@ -86,30 +86,36 @@
         <ul class="navigatie-iconen">
             <li>
                 <a href="index.html">
-                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/home.svg" alt="" />
+                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/home.svg"
+                        alt="" />
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a href="verkennen.html">
-                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/kaart.svg" alt="" />
+                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/kaart.svg"
+                        alt="" />
                     <span>Verkennen</span>
                 </a>
             </li>
             <li>
                 <a href="nieuws.html">
-                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/nieuws.svg" alt="" />
+                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/nieuws.svg"
+                        alt="" />
                     <span>Nieuws</span>
                 </a>
             </li>
             <li>
                 <a href="collectie.html">
-                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/collectie.svg" alt="" />
+                    <img src="https://s2108887.github.io/look-and-feel-styleguide/assets/iconen/collectie.svg"
+                        alt="" />
                     <span>Collectie</span>
                 </a>
             </li>
         </ul>
     </nav>
+
+    <script src="scripts/instellingen.js" type="module"></script>
 
 
 </body>
