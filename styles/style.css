@@ -1,3 +1,38 @@
+html {
+    --z-index-navigatie: 10;
+}
+
+body {
+    height: 100svh;
+    width: 100svw;
+    display: grid;
+    grid-template-rows: [main] 1fr [nav] min-content;
+    grid-template-columns: [main nav] 1fr;
+
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 32rem) {
+        grid-template-rows: [main nav] 1fr;
+        grid-template-columns: [nav] min-content [main] 1fr;
+    }
+
+    main {
+        grid-column: main / span 1;
+        grid-row: main / span 1;
+    }
+
+    .hoofdnavigatie {
+        grid-column: nav / span 1;
+        grid-row: nav / span 1;
+    }
+}
+
+main {
+    padding: var(--afstand-normaal);
+    overflow-y: auto;
+}
+
 .instellingen-formulier {
 
     display: flex;
@@ -22,6 +57,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             gap: var(--afstand-normaal);
+
             label {
                 cursor: pointer;
                 display: flex;
@@ -36,4 +72,34 @@
         padding: var(--afstand-klein);
         background-color: var(--_achtergrond-kleur);
     }
+}
+
+.hoofdnavigatie {
+    z-index: var(--z-index-navigatie);
+    background-color: light-dark(var(--accent-kleur-2-lichtst), var(--accent-kleur-2-donker));
+    padding: var(--afstand-klein);
+
+    box-shadow: 0 -5px 5px black;
+
+    @media (min-width: 32rem) {
+        box-shadow: 5px 0 5px black;
+    }
+
+    ul {
+        list-style-type: "";
+        justify-content: space-evenly;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--tekst-kleur);
+
+        display: grid;
+        place-items: center;
+        gap: var(--afstand-klein);
+    }
+
 }
