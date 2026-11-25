@@ -31,16 +31,24 @@ body {
 main {
     padding: var(--afstand-normaal);
     overflow-y: auto;
+    container-type: inline-size;
 }
 
 .instellingen-formulier {
+    display: grid;
+    grid-template-columns: 1fr;
 
-    display: flex;
-    flex-wrap: wrap;
+    @container (width > 35rem) {
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+
+    
     gap: var(--afstand-normaal);
 
+
     button {
-        flex-basis: 100%;
+        grid-column: 1 / -1;
+        max-width: fit-content;
     }
 
 
