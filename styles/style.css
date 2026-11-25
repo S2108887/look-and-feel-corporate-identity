@@ -41,17 +41,13 @@ main {
     @container (width > 35rem) {
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     }
-
     
     gap: var(--afstand-normaal);
-
 
     button {
         grid-column: 1 / -1;
         max-width: fit-content;
     }
-
-
 
     fieldset {
         --_achtergrond-kleur: light-dark(var(--accent-kleur-1-lichtst), var(--accent-kleur-1-donker));
@@ -63,7 +59,7 @@ main {
             list-style-type: "";
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: left;
             gap: var(--afstand-normaal);
 
             label {
