@@ -4,14 +4,6 @@
 
 html {
     --z-index-navigatie: 10;
-
-    &:has(body[data-kleurenschema="licht"]) {
-        color-scheme: light;
-    }
-
-    &:has(body[data-kleurenschema="donker"]) {
-        color-scheme: dark;
-    }
 }
 
 body {
