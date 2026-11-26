@@ -4,6 +4,17 @@
 
 html {
     --z-index-navigatie: 10;
+
+    @media (prefers-contrast: more) {
+        &:has(> body:not([data-contrast="standaard"])) {
+            --tekst-kleur: light-dark(black, white);
+            --achtergrond-kleur: light-dark(white, black);
+        }
+    }
+    &:has(> body[data-contrast="hoog"]) {
+        --tekst-kleur: light-dark(black, white);
+        --achtergrond-kleur: light-dark(white, black);
+    }
 }
 
 body {
