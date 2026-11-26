@@ -9,6 +9,11 @@ De instructie vind je in: [WIKI](https://github.com/fdnd-task/look-and-feel-corp
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving
+
+[Ga naar de website](https://edu.nl/md4mn).
+
+<img width="300" src="assets/qr-code.svg">
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
